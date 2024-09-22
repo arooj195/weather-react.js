@@ -1,0 +1,44 @@
+.weather-container {
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: white;
+}
+
+.sunny {
+  background-image: url('../assets/images/sunny.jpeg');
+}
+
+.clouds {
+  background-image: url('../assets/images/cloudy.jpg');
+}
+
+.rain {
+  background-image: url('../assets/images/rainy.jpg');
+}
+
+.weather-content {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.weather-info p {
+  font-size: 1.2rem;
+}
