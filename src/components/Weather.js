@@ -14,7 +14,7 @@ const Weather = ({ city }) => {
   // Fetch weather data based on the city
   useEffect(() => {
     const fetchWeatherData = async () => {
-      const API_KEY = '65f48ce87f9f73fca5f9ea14fecd6a27'; // Replace with your OpenWeather API key
+      const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY; // Replace with your OpenWeather API key
       try {
         const response = await axios.get(
           `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
